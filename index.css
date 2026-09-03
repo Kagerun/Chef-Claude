@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #fafaf6;
+    font-family: Inter, sans-serif;
+}
+
+.header {
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+}
+
+.header-icon {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.header-title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.ingredient-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 12px
+}
+
+.ingredient-input {
+    width: 300px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    line-height: 1.3;
+    flex-grow: 1;
+    min-width: 150px;
+    max-width: 350px;
+}
+
+.ingredient-button {
+    width: 150px;
+    background: #141413;
+    color: #ccc;
+    border-radius: 4px;
+    border:none;
+    flex-wrap: nowrap;
+    font-family: inherit;
+}
+
+.ingredient-button::before {
+    content: "+";
+    margin-right: 5px;
+}
+
+.list-header{
+    width: 500px;
+    margin:20px auto;
+}
+
+.ingredient-list {
+    padding: 0;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.ingredient-list li {
+    width: 462px;
+}
+
+.get-recipe-container{
+    width:500px;
+    margin: 30px auto;
+    background-color: #F0EFEB;
+    padding: 10px 28px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.get-recipe-container > button{
+    background: #CE7E64;
+    border:none;
+    padding: 5px 10px;
+    color: #FAFAF8;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.get-recipe-container p{
+    color:#8A8A8C;
+    font-size: 13px;
+}
+
+.get-recipe-container h3{
+    font-weight: 500;
+}
+
+.suggested-recipe-container {
+    width:80%;
+    background: #F0EFEB;
+    padding: 18px;
+    margin: 30px auto;
+    border-radius: 8px;
+    color: #475467;
+    line-height: 28px;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.suggested-recipe-container ul li, .suggested-recipe-container ol li {
+    margin-bottom: 10px;
+}
+
+.suggested-recipe-container button{
+    display:block;
+    background: #475467;
+    border:none;
+    padding: 6px 12px;
+    color: #FAFAF8;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 15px;
+    margin: 20px auto;
+}
